@@ -1,7 +1,7 @@
 function solution(dots) {
   var answer = 0;
 
-    // 기울기 구하는 함수
+    // 기울기(y변화량 / x변화량) 구하는 함수
   function getInclination(a, b, c, d) {
     let ab, cd;
 
