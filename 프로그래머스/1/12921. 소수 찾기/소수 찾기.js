@@ -3,19 +3,17 @@ const isPrime = (num) => {
         return false;
     }
 
-    if( num % 2 === 0) { 
+    if(num % 2 === 0) { 
         return num === 2 ? true : false;
     }
    
     const sqrt = parseInt(Math.sqrt(num));
 
-    for( let divider = 3; divider <= sqrt; divider += 2) {
-
-    if(num % divider === 0) {
-        return false;
+    for(let divider = 3; divider <= sqrt; divider += 2) {
+        if(num % divider === 0) {
+            return false;
+        }
     }
-    
-  }
   
     return true;
 }
