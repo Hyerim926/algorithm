@@ -62,6 +62,20 @@ class BinaryTree {
         // 루트 노드 출력
         console.log(tree.data);
     }
+
+    // 왼쪽 자식 노드 제거 함수
+    removeLeftSubTree() {
+        let deletingNode = this.getLeftSubTree();
+        this.setLeftSubTree(null);
+        return deletingNode;
+    }
+
+    // 오른쪽 자식 노드 제거 함수
+    removeRightSubTree() {
+        let deletingNode = this.getRightSubTree();
+        this.setRightSubTree(null);
+        return deletingNode;
+    }
 }
 
 export { BinaryTree };
